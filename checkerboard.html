@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body onload="draw()">
+	<canvas id="sketch" width="680" height="480">
+	</canvas>
+		<script>
+			function draw()
+			{
+				
+				var sketch = document.getElementById("sketch");
+				var context = sketch.getContext("2d");
+				
+				for (down = 0; down <= 3; down++ )
+				{
+					for (over1 = 0; over1 <= 3; over1++)
+					{
+					//rectangle
+					context.fillRect(over1*50, down*50+25, 25, 25);
+					for (over = 0; over <= 3; over++)
+					{
+					//rectangle
+					context.fillRect(over*50+25, down*50, 25, 25);
+					}
+				}
+				}
+	}
+		</script>
+</body>
+</html>

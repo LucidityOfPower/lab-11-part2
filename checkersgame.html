@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<body onload="draw()">
+	<canvas id="sketch" width="680" height="480">
+	</canvas>
+		<script>
+			function draw()
+			{
+				
+				var sketch = document.getElementById("sketch");
+				var context = sketch.getContext("2d");
+				
+				//rectangles
+				for (down = 0; down <= 3; down++ )
+				{
+					for (over1 = 0; over1 <= 3; over1++)
+					{
+					//rectangle
+					context.fillRect(over1*50, down*50+25, 25, 25);
+					for (over = 0; over <= 3; over++)
+					{
+					//rectangle
+					context.fillRect(over*50+25, down*50, 25, 25);
+					}
+				}
+				}
+				
+				for (i = 0; i <= 3; i++)
+				{
+					//circle
+					context.fillStyle = "#0000FF";
+					context.beginPath();
+					context.arc(i*50+37, i+10, 12, 0, 2 * Math.PI, true);
+					context.closePath();
+					context.fill();
+				}
+				for (i = 0; i <= 3; i++)
+				{
+					//circle
+					context.fillStyle = "#0000FF";
+					context.beginPath();
+					context.arc(i*50+12, i+36, 12, 0, 2 * Math.PI, true);
+					context.closePath();
+					context.fill();
+				}
+				for (i = 0; i <= 3; i++)
+				{
+					//circle
+					context.fillStyle = "#0000FF";
+					context.beginPath();
+					context.arc(i*50+37, i+61, 12, 0, 2 * Math.PI, true);
+					context.closePath();
+					context.fill();
+				}
+				for (i = 0; i <= 3; i++)
+				{
+					//circle
+					context.fillStyle = "#00FF00";
+					context.beginPath();
+					context.arc(i*50+37, i+162, 12, 0, 2 * Math.PI, true);
+					context.closePath();
+					context.fill();
+				}
+				for (i = 0; i <= 3; i++)
+				{
+					//circle
+					context.fillStyle = "#00FF00";
+					context.beginPath();
+					context.arc(i*50+12, i+186, 12, 0, 2 * Math.PI, true);
+					context.closePath();
+					context.fill();
+				}
+				for (i = 0; i <= 3; i++)
+				{
+					//circle
+					context.fillStyle = "#00FF00";
+					context.beginPath();
+					context.arc(i*50+12, i+135, 12, 0, 2 * Math.PI, true);
+					context.closePath();
+					context.fill();
+				}
+	}
+		</script>
+</body>
+</html>

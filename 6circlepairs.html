@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<body onload="draw()">
+	<canvas id="sketch" width="680" height="480">
+	</canvas>
+		<script>
+			function draw()
+			{
+				
+				var sketch = document.getElementById("sketch");
+				var context = sketch.getContext("2d");
+				
+				//circle
+				context.fillStyle = "#440000";
+				context.beginPath();
+				context.arc(100, 100, 60, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+				
+				//circle
+				context.fillStyle = "#660000";
+				context.beginPath();
+				context.arc(100, 100, 50, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+				
+				//circle
+				context.fillStyle = "#880000";
+				context.beginPath();
+				context.arc(100, 100, 40, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+				
+				//circle
+				context.fillStyle = "#AA0000";
+				context.beginPath();
+				context.arc(100, 100, 30, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+				
+				//circle
+				context.fillStyle = "#CC0000";
+				context.beginPath();
+				context.arc(100, 100, 20, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+				
+				//circle
+				context.fillStyle = "#EE0000";
+				context.beginPath();
+				context.arc(100, 100, 10, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+				
+				//bein blue circles
+				context.fillStyle = "#000044";
+				context.beginPath();
+				context.arc(250, 100, 60, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+				
+				//circle
+				context.fillStyle = "#000066";
+				context.beginPath();
+				context.arc(250, 100, 50, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+				
+				//circle
+				context.fillStyle = "#000088";
+				context.beginPath();
+				context.arc(250, 100, 40, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+				
+				//circle
+				context.fillStyle = "#0000AA";
+				context.beginPath();
+				context.arc(250, 100, 30, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+				
+				//circle
+				context.fillStyle = "#0000CC";
+				context.beginPath();
+				context.arc(250, 100, 20, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+				
+				//circle
+				context.fillStyle = "#0000EE";
+				context.beginPath();
+				context.arc(250, 100, 10, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+	}
+		</script>
+</body>
+</html>
