@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body onload="draw()">
+	<canvas id="sketch" width="1024" height="768">
+	</canvas>
+		<script>
+			function draw()
+			{
+				
+				var sketch = document.getElementById("sketch");
+				var context = sketch.getContext("2d");
+				
+				for (i = 0; i <= 42; i++)
+				{
+					if (i % 2 == 1)
+					{
+					//circle
+					context.fillStyle = "#F00080";
+					context.beginPath();
+					context.arc(i*10+25, i*10+25, i*6, 0, 2 * Math.PI, true);
+					context.closePath();
+					context.fill();
+					}
+					else
+					{
+					//circle
+					context.fillStyle = "#F0F0F9";
+					context.beginPath();
+					context.arc(i*10+25, i*10+25, i*6, 0, 2 * Math.PI, true);
+					context.closePath();
+					context.fill();
+					}
+				}
+			}
+		</script>
+</body>
+</html>
